@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <button onclick="this.innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');">¿Qué hora es?</button>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">La hora es: </button>
+    <p id="demo"></p>
+
+    <button onclick="document.querySelector('.valor').innerHTML = '&#128686;'">Cambiar clase valor 2</button>
+
+    <button onclick="document.querySelector('#hola').innerHTML = '&#128695;'">Cambiar id valor 3</button>
+
+    <button onclick="document.querySelector('#jaja').innerHTML = '&#128189;'">Cambiar id valor 1</button>
+
+    <ul>
+        <li id="jaja">Uno</li>
+        <li class="valor">Dos</li>
+        <li id="hola">Tres</li>
+    </ul>
+    <script src="js/index.js"></script> 
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+
+</body>
+</html>

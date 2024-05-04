@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 4</title>
+</head>
+<body>
+    
+
+<script>
+
+    let a = 100;  let b = 200; 
+
+    function multiplicar(a, b){
+        return a * b; 
+    }
+
+    let resultado = multiplicar(a, b);
+    console.log(resultado);
+
+    function calcularAreaCirculo(radio){
+        let area = Math.PI * Math.pow(radio, 2); //pow = potencia
+        return area;
+    }
+
+    console.log(calcularAreaCirculo(10));
+
+    function toCelsius(fahrenheit){
+        return (5/9) * (fahrenheit - 32);
+    }
+
+    let temp = toCelsius(80);
+    console.log("Temperatura en Celsius: " + temp);
+
+    const carro = {
+        tipo : "Ford",
+        modelo : "Mustang",
+        color : "Negro"
+    }
+
+    let variable = 100;
+    let variable2 = "JAJA";
+    let variable3 = true 
+    console.log ("Tipo: ", typeof carro);
+    console.log ("Tipo: ", + typeof variable);
+    console.log ("Tipo: ", + typeof variable2);
+    console.log ("Tipo: ", + typeof variable3);
+
+    console.log ("Modelo: ", carro.modelo);
+
+    let saludo; 
+
+    console.log(saludo); 
+
+    let hora = new Date().getHours();
+    console.log(hora);
+
+    if (hora < 12) {
+        console.log("Buenos días");
+    } else if (hora < 19) {
+        console.log("Buenas tardes");
+    } else {
+        console.log("Buenas noches");
+    }
+
+    let diaDeLaSemana = new Date().getDay();
+    console.log(diaDeLaSemana);
+
+    switch (diaDeLaSemana) {
+        case 0:
+            console.log("Domingo");
+            break;
+        case 1:
+            console.log("Lunes");
+            break;
+        case 2:
+            console.log("Martes");
+            break;
+        case 3:
+            console.log("Miércoles");
+            break;
+        case 4:
+            console.log("Jueves");
+            break;
+        case 5:
+            console.log("Viernes");
+            break;
+        case 6:
+            console.log("Sábado");
+            break;
+        default:
+            console.log("Día inválido");
+            break;
+    }
+
+    for (let i = 1; i < 6; i++) {
+        console.log(i);
+
+    }
+
+    const persona = { nombre : "Pollo", edad : 1200, sexo : "Macho", casado : false };
+    
+    for (let propiedad in persona) {
+        console.log(propiedad + ": " + persona[propiedad]);
+
+    }
+
+    let marcas = ["Ford", "Chevrolet", "Toyota", "Nissan", "Mazda"];
+    for (let marca of marcas) {
+        console.log(marca);
+    }
+    
+    j = 20;
+    while (j < 30) {
+        console.log(j);
+        j++;
+    }
+
+</script>
+
+</body>
+</html>
